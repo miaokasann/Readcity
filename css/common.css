@@ -106,17 +106,17 @@ body{font-size:12px;font-family:"微软雅黑"; background: #fbf8f4;}/*backgroun
 img.thumb {
 	width: 100%;
 	max-width: 100%;
-	height: auto;
+	height: 150px;
 }
 .white-panel {
 	background: white;
 	border-radius: 5px;
 	box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
 	padding: 10px;
-	float: left;
-	display: inline-block;
-	margin: 20px;
 	width: 250px;
+	position: relative;
+	margin: 5px;
+	z-index: 999;
 }
 .white-panel h1 {
 	font-size: 1em;
@@ -132,3 +132,61 @@ img.thumb {
 	-o-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }*/
+
+
+
+#upload_panel{
+	padding: 15px;
+}
+#upload_panel p{
+	padding: 0;
+	margin: 10px 0;
+}
+#upload_panel p label{
+	font-size: 14px;
+	color: #666;
+}
+/*#upload_panel p .star{
+	color: yellow;
+}*/
+#upload_panel .text{
+	text-indent: 5px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	width: 200px;
+	height: 25px;
+	color: #666;
+	background: #fff;
+}
+
+.img-look{
+	position: absolute;
+	float: right;
+}
+
+
+.info{
+	position: relative;
+	margin-left: 5px;
+	width: 250px;
+}	
+
+
+.more-meta{
+	width: 300px;
+	height: 200px;
+	border: 1px solid black;
+	background: white;
+	position: absolute;
+	padding:5px;
+	left: 280px;
+	top: -200px;
+	z-index: 1000;
+}
+.more-meta p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
