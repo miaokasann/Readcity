@@ -1,0 +1,83 @@
+/* Reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { margin:0; padding:0; }
+table { border-collapse:collapse; border-spacing:0; }
+fieldset,img { border:0; }
+address,caption,cite,code,dfn,em,strong,th,var { font-style:normal; font-weight:normal; }
+ol,ul { list-style:none; }
+caption,th { text-align:left; }
+h1,h2,h3,h4,h5,h6 { font-size:100%; font-weight:normal; }
+q:before,q:after { content:''; }
+abbr,acronym { border:0; }
+
+/* Font,  Link & Container */
+body { font:12px/1.6 arial,helvetica,sans-serif; }
+a:link { color:#369;text-decoration:none; }
+a:visited { color:#669;text-decoration:none; }
+a:hover { color:#fff;text-decoration:none;background:#039; }
+a:active { color:#fff;text-decoration:none;background:#f93; }
+button { cursor:pointer;line-height:1.2; }
+.mod { width:100%; }
+.hd:after, .bd:after, .ft:after, .mod:after {content:'\0020';display:block;clear:both;height:0; }
+.error-tip { margin-left:10px; }
+.error-tip, .error { color:#fe2617; }
+
+.wrapper { width:950px; margin:0 auto; }
+#header { padding-top:30px; }
+#content { min-height:400px;*height:400px;}
+#header, #content { margin-bottom:40px; }
+#header, #content, #footer { width:100%;overflow:hidden; }
+.article { float:left;width:590px; }
+.aside { float:right; width:310px;color:#666; }
+.aside li { padding-bottom: 1em; }
+
+a { color: #336699 }
+em { font-style: normal }
+form { position: relative; left: 0; top: 0 }
+h1 {
+  display: block;
+  margin: 0;
+  padding: 0 0 15px 0;
+  font-size: 25px;
+  font-weight: bold;
+  color: #494949;
+  line-height: 1.1;
+}
+.hide {display: none;}
+.item { clear:both;margin: 15px 0 }
+.item-error { margin-left: 75px; color: #fe2617 }
+.suggestion { padding-left: 75px }
+.article { padding-bottom: 1em; }
+label { display: inline-block; float:left; margin-right: 15px; text-align: right; width: 60px; font-size: 14px; line-height: 30px; vertical-align: middle }
+.sex{font-size: 14px; line-height: 30px;}
+.box { margin-left: 75px }
+.basic-input { width: 200px; padding: 5px; height: 18px; font-size: 14px; -moz-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; border: 1px solid #c9c9c9 }
+.item .basic-input:focus { border: 1px solid #a9a9a9 }
+.validate-option { display: none; color: #808080 }
+.validate-error { display: none; color: #fe2617 }
+p.validate-error { margin-left: 75px }
+.loc-item .validate-error { line-height: 30px }
+.extra-tips .validate-error , .extra-tips .validate-option { padding-left: 10px; background: url(https://img3.doubanio.com/f/shire/49ede118d7ddeccdbb53cc2bc36248fb36ab6eae/pics/icon/tips_arrow.gif) no-repeat}
+.extra-tips .validate-error { background-position: left -52px }
+.extra-tips .validate-option { background-position: left 4px }
+.loc { font-size: 12px; line-height: 30px }
+.tips , #location { font-size: 12px; color: #808080 }
+#location strong { color: #111111; font-weight: normal }
+.captcha-item span.validate-error { padding-left: 10px; background: url(https://img3.doubanio.com/f/shire/49ede118d7ddeccdbb53cc2bc36248fb36ab6eae/pics/icon/tips_arrow.gif) no-repeat left -52px ; display: none }
+.captcha-img { margin: 2px 6px 0 0; vertical-align: top }
+.captcha-item .basic-input { width: 95px }
+.captcha-item { zoom: 1 }
+/* .captcha-item .captcha {margin-left: 75px;} */
+#email_suggestion { display: inline-block; position: absolute; left: 75px; top: 30px; _left: 0px }
+#email_suggestion p { background: #eef9eb; border: 1px solid #5e5e5f; margin: 0; padding: 3px }
+.btn-submit { cursor: pointer; font-size: 14px; font-weight: bold; padding: 6px 26px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; *width: 100px }
+.disabled { color: #999; background: #f0f0f0; border: 1px solid #b9b9b9 }
+.enabled { color: #ffffff; background: #3fa156; border: 1px solid #528641 }
+.item-submit {margin-top: 25px;}
+.device-mobile .captcha-img { display:block;max-width:60%; }
+.device-mobile .captcha-item p { margin-bottom:1em; }
+.device-mobile .item-submit { margin-bottom:2em;  }
+
+
+.btn-submit { cursor: pointer;color: #ffffff;background: #3fa156; border: 1px solid #528641; font-size: 14px; font-weight: bold; padding:6px 26px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; *width: 100px;*height:30px; }
+.btn-submit:hover { background-color:#4fca6c;border-color:#6aad54; }
+.btn-submit:active { background-color:#3fa156;border-color:#528641; }

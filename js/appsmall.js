@@ -86,7 +86,7 @@ function checkLogin(){
 					$('#user_name').html(
 						`你好,<a href="#">`+checkjson.name+`</a>
 						<ul>
-						<li onclick="searchLike(`+checkjson.id+`);"><a href="user.html">用户管理</a></li>
+						<li onclick="searchLike(`+checkjson.id+`);"><a href="#">用户管理</a></li>
 						<li onclick="logOff(`+checkjson.name+`);"><a href="dushu.html">退出登录</a></li>
 						</ul>`
 					);
@@ -99,17 +99,17 @@ function checkLogin(){
 						modId = -1;
 						$('#upload_panel').dialog('open');
 					});
-          readAdmin();
+          //readAdmin();
         }
         else{
 					url = 'json/sql.php?act=read&userid='+userid;
-          readnoAdmin();
+          //readnoAdmin();
         }
       }
       else{
 				url = 'json/sql.php?act=read';
         $('#user_name').html('');
-        readnoAdmin();
+        //readnoAdmin();
       }
 		}
 	});
@@ -247,10 +247,7 @@ function doData(theid,e){
 
 	save(jsonObj);
 
-
 	e.target.value = '';
-	$("#file").val('');
-	$("#img_look").attr("src","");
 
 }
 
@@ -350,7 +347,7 @@ function setAll(object){
 	var ele = `<li class="white-panel" id="theid_myid" >
 				<a href="bookmsg.html?book=myid"><img src="images/pic" class="thumb"></a>
 				<div class="info" id="theids_myid">
-				<h4><a href="bookmsg.html?book=myid">title</a></h4>
+				<h4><a href="#">title</a></h4>
 				<p>price</p>
 				<button onclick="del(myid);">删除</button>
 				<button onclick="mod(myid);">编辑</button>

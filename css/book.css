@@ -1,0 +1,87 @@
+#wrapper {
+  width: 950px;
+  margin: 0 auto;
+  padding: 40px 0 0 0;
+}
+
+h1{
+  word-wrap: break-word;
+  display: block;
+  font-size: 25px;
+  font-weight: bold;
+  color: #494949;
+  margin: 0;
+  
+  line-height: 1.1;
+}
+h1 .title{
+  margin-bottom: 15px;
+  display: block;
+}
+#content{
+  min-height: 420px;
+  width: 950px;
+  margin: 0 auto;
+  
+}
+.article{
+  width: 675px;
+  float: left;
+  padding-right: 40px;
+}
+
+#mainpic{
+  margin: 3px 0 0 0;
+  float: left;
+  text-align: center;
+  margin: 3px 12px 0 0;
+  max-width: 155px;
+  overflow: hidden;
+  height: 200px;
+}
+#mainpic a img{
+  width: 100%;
+  height: 100%;
+}
+
+.slide-btns{
+  display:inline-block;
+  *display:inline;
+  zoom:1;
+  vertical-align:middle;
+  _vertical-align:baseline;
+  line-height:1;
+  position: relative;
+  left: -25px;
+  margin-bottom: 8px;
+
+}
+.slide-btns a:link,.slide-btns a:visited,.slide-btns a:active,.slide-btns a:hover{
+  color:#fff;
+  width:18px;
+  height:18px;
+  display:inline-block;
+  *display:inline;
+  zoom:1;
+  font:100 16px Arial;
+  text-align:center;
+  line-height:16px;
+  margin-left:4px;
+  outline:none;
+  border-radius:9px;
+  background:#9b9a8e
+}
+.slide-btns a:hover{
+  opacity:0.8;
+  filter:alpha(opacity=80)
+}
+.slide-btns .next{letter-spacing:-1px}
+.ua-windows .slide-btns a{font-weight:bold}
+
+.alike{
+  color: #80735b;
+  font-size: 14px;
+  position: relative;
+  left: -18px;
+  top: -2px;
+}

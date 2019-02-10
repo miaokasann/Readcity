@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <title>dushu</title>
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/book.css" />
+  <link rel="stylesheet" href="css/default.css" />
+	<link rel="stylesheet" href="css/smoothness/jquery ui.css">
+	<script src="js/jquery.js"></script>
+  <script src="js/jquery ui.js"></script>
+  <script src="js/jquery.cookie.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/book.js"></script>
+</head>
+<body>
+	<div class="headerBox">
+		<div class="header comWidth">
+			<div class="logo fl">
+				<a href="#">读书 dushu</a>
+			</div>
+			<div class="searchBox fl">
+				<input type="text" class="search_input fl" />
+				<input type="button" class="search_btn" value="搜书" />
+			</div>
+			<ul class="menu fr">
+				<li class="menuTxt" id="user_name">
+				</li>
+				<li>
+					<div class="menuTxt">
+						<div id="login_o"><a href="login.html">登录</a></div><span>|</span><div id="reg_o"><a href="register.html">注册</a></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="navBox">
+		<div class="nav">
+			<div class="type_menu active">
+				<a href="#">新书</a>
+				<i></i>
+			</div>
+			<div class="type_menu">
+				<a href="#">推荐</a>
+				<i></i>
+			</div>
+			<div class="type_menu">
+				<a href="#">书单</a>
+				<i></i>
+			</div>
+		</div>
+  </div>
+  <div id="wrapper">
+    <div class="slide-btns">
+        <a href="#" onclick="javascript:history.go(-1);">‹</a>
+    </div>
+    <a href="#" onclick="javascript:history.go(-1);" class="alike">返回收藏</a>
+    <h1>
+      <span class="title"></span>
+    </h1>
+    <div id="content">
+        <div class="acticle">
+          <div class="subject">
+            <div id="mainpic">
+              <a href="" class="nbg"><img class="img" src="" alt=""></a>
+            </div>
+            <div id="info">
+              <span>
+                <span>作者</span>:
+                <span class="author"></span>
+              </span>
+              <br>
+              <span>
+                <span>出版日期</span>:
+                <span class="birth"></span>
+              </span>
+              <br>
+              <span>
+                <span>定价</span>：
+                <span class="price"></span>
+              </span>
+              <br>
+              <span>
+                <span>详情介绍</span>:
+                <span class="description"></span>
+              </span>
+              <br>
+            </div>
+          </div>
+          <div id="interest_sect_level">
+            <button class="like">未喜欢</button>
+          </div>
+          <br><br><br><br>
+        </div>
+      </div>
+  </div>
+  
+  <div id="footer"></div>
+  </body>
+  </html>

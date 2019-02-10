@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/default.css" />
+  <link rel="stylesheet" href="css/smoothness/jquery ui.css">
+  <style>
+    #warpper{
+      margin: 80px;
+    }
+    #rounded-corner
+    {
+      margin:0px;
+      width:100%;
+      text-align: left;
+      border-collapse: collapse;
+    }
+    #rounded-corner th
+    {
+      padding: 8px;
+      font-weight: bold;
+      font-size:12px;
+      color: #535E66;
+      background: #dde8f0; 
+      text-shadow:1px 1px #F2F8FC;
+      width: 30px;
+    }
+    .odd tr td
+    {
+      padding: 8px;
+      background: #f4f9fd;
+      border-top: 1px solid #fff;
+      color: #669;
+    }
+    #rounded-corner tr
+    {
+      padding: 8px;
+      background: #fcfdfe;
+      border-top: 1px solid #fff;
+      color: #669;
+    }
+    #rounded-corner tfoot td
+    {
+      background: #dde8f0;
+      font-size:11px;
+      padding:8px 8px 8px 15px;
+      -moz-border-radius-bottomleft:6px;
+      -webkit-border-bottom-left-radius:6px;
+      -khtml-border-bottom-left-radius:6px;
+      border-bottom-left-radius:6px;
+      -moz-border-radius-bottomright:6px;
+      -webkit-border-bottom-right-radius:6px;
+      -khtml-border-bottom-right-radius:6px;
+      border-bottom-right-radius:6px;
+    }
+    #rounded-corner tbody tr:hover td
+    {
+      background: #dde8f0;
+    }
+    #edit{
+      padding: 15px;
+    }
+    #edit p{
+      padding: 0;
+      margin: 10px 0;
+    }
+    #edit p label{
+      font-size: 14px;
+      color: #666;
+    }
+    .nowid{
+      display: none;
+    }
+    .foot ul{
+      display: inline-block;
+    }
+    .foot ul li{
+      display: inline-block;
+    }
+    .foot a{
+      margin:0 5px 0 0;
+    }
+    .active{
+      font-weight:bold;
+    }
+  </style>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery ui.js"></script>
+  <script src="js/user.js"></script>
+</head>
+<body>
+  <div id="warpper">
+    <h1>用户管理</h1>
+    <table id="rounded-corner" cellspacing="10">
+      <thead>
+        <tr>
+          <th align="center">ID</th>
+          <th align="center">用户名</th>
+          <th align="center">性别</th>
+          <th align="center">生日</th>
+          <th align="center">管理员</th>
+          <th align="center">操作</th>
+        </tr>
+      </thead>
+      <tfoot align="right" class="foot">
+        <tr>
+            <td colspan="12">
+              <a href="javascript:;" class="page_up" onclick="prev(-1);">上一页</a>
+              <ul></ul>
+              <a href="javascript:;" class="page_down" onclick="next(1);">下一页</a>
+          </td>
+        </tr>
+      </tfoot>
+      <tbody align="center" class="odd">
+         
+      </tbody>
+    </table>
+    <div id="edit">
+      <p>
+        <label>现在的权限：</label>
+        <div class="now"></div>
+        <div class="nowid"></div>
+      </p>
+      <p>
+          <label>请选择权限：</label>
+          <input type="radio" name="ad" id="ad_yes" checked="checked" value="1"><label>管理员</label></input>
+          <input type="radio"name="ad" id="ad_no" value="0"><label>普通用户</label></input>
+      </p>
+    </div>
+    <div class="">
+      <a href="dushu.html">返回首页</a>
+    </div>
+  </div>
+</body>
+</html>
